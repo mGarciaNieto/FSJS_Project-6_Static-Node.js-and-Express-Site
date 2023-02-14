@@ -1,10 +1,12 @@
 {
   "name": "fsjs_project-6_static-node.js-and-express-site",
+  "type": "module",
   "version": "1.0.0",
   "description": "Using Static Node.js and Express Site to create a portfolio site made of past projects built",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --experimental-json-modules --exec babel-node app.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,11 @@
     "express": "^4.18.2",
     "nodemon": "^2.0.20",
     "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2"
   }
 }
