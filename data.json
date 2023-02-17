@@ -1,0 +1,104 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "project_name": "A Random Quote Generator",
+      "description": "For this first project, I've created an app that displays random famous quotes each time a button is clicked. ",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "live_link": "https://mgarcianieto.github.io/FSJS_Project-1_A-Random-Quote-Generator/",
+      "github_link": "https://github.com/mGarciaNieto/FSJS_Project-1_A-Random-Quote-Generator",
+      "image_urls": [
+        "/static/img/projects/project1_main.png",
+        "/static/img/projects/project1_land.png"
+      ]
+    },
+    {
+      "id": 1,
+      "project_name": "Data Pagination and Filtering",
+      "description": "In this project, I've used a common web development technique known as 'pagination' to enhance the usability of a web page. ",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "live_link": "https://mgarcianieto.github.io/FSJS_Project-2_Data-Pagination-and-Filtering/",
+      "github_link": "https://github.com/mGarciaNieto/FSJS_Project-2_Data-Pagination-and-Filtering",
+      "image_urls": [
+        "/static/img/projects/project2_main.png",
+        "/static/img/projects/project2_land.png"
+      ]
+    },
+    {
+      "id": 2,
+      "project_name": "Interactive Form",
+      "description": "In this project, I've used JavaScript to enhance an interactive registration form for a fictional Full Stack conference.",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "RegEx"
+      ],
+      "live_link": "https://mgarcianieto.github.io/FSJS_Project-3_Interactive-Form/",
+      "github_link": "https://github.com/mGarciaNieto/FSJS_Project-3_Interactive-Form",
+      "image_urls": [
+        "/static/img/projects/project3_main.png",
+        "/static/img/projects/project3_land.png"
+      ]
+    },
+    {
+      "id": 3,
+      "project_name": "OOP Game Show App",
+      "description": "In this project, I've created a browser-based, word guessing game: 'Phrase Hunter'. I've used JavaScript and OOP (Object-Oriented Programming) to select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard.",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "OOP"
+      ],
+      "live_link": "https://mgarcianieto.github.io/FSJS_Project-4_OOP-Game-Show-App/",
+      "github_link": "https://github.com/mGarciaNieto/FSJS_Project-4_OOP-Game-Show-App",
+      "image_urls": [
+        "/static/img/projects/project4_main.png",
+        "/static/img/projects/project4_land.png"
+      ]
+    },
+    {
+      "id": 4,
+      "project_name": "Public API Requests",
+      "description": "I've built an app for a fictional company called Awesome Startup, a distributed company with remote employees working all over the world. They need a smart way for employees to share contact information with each other. Using the Random User Generator API (https://randomuser.me/) to grab information for 12 random 'employees', and use that data to build a prototype for an Awesome Startup employee directory.",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Fetch API"
+      ],
+      "live_link": "https://mgarcianieto.github.io/FSJS_Project-5_Public-API-Requests/",
+      "github_link": "https://github.com/mGarciaNieto/FSJS_Project-5_Public-API-Requests",
+      "image_urls": [
+        "/static/img/projects/project5_main.png",
+        "/static/img/projects/project5_land.png"
+      ]
+    },
+    {
+      "id": 5,
+      "project_name": "WeppApp Dashboard",
+      "description": "In this project, I've created an interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript programming. This project involves creating tables, charts, graphics and other user interface components in a manner that promotes interactivity and usability.",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "SVG Graphics"
+      ],
+      "live_link": "https://mgarcianieto.github.io/FEWD_Project-7_WebApp-Dashboard/",
+      "github_link": "https://github.com/mGarciaNieto/FEWD_Project-7_WebApp-Dashboard",
+      "image_urls": [
+        "/static/img/projects/project6_main.png",
+        "/static/img/projects/project6_land.png"
+      ]
+    }
+  ]
+}
