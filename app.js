@@ -30,15 +30,6 @@ app.get('/projects/:id', (req, res) => {
   }
 })
 
-// error route
-app.get('/error', (req, res, next) => {
-  console.log('Error 500 called')
-  const err = new Error()
-  err.message = 'Oops! It looks like something went wrong on the server.'
-  err.status = 500
-  throw err
-})
-
 app.use((req, res, next) => {
   console.log('404 error handler called!')
   res.status(404).render('page-not-found')
@@ -48,7 +39,7 @@ app.use((err, req, res, next) => {
   if (err.status === 404) {
     res.status(404).render('page-not-found', { err })
   } else {
-    err.message = err.message || `Oops! It looks like something went wrong on the server.`
+    err.message = `Oops! It looks like something went wrong on the server.`
     res.status(err.status || 500).render('error', { err })
   }
 })

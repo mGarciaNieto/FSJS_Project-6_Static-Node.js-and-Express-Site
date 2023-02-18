@@ -5,8 +5,8 @@ block content
     nav.nav
         a(href='/')
             span &larr;
-            |  Back to Homepage
-            h1= err.status 
-            h2= err.message
+            |  Back
+        h1= err.status 
+        h2= err.message
     body
             img.error(src='../static/img/error/error_500.png', alt='Internal server error 500') 
