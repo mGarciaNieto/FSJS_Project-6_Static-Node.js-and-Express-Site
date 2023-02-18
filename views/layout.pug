@@ -6,6 +6,13 @@ html(lang="en" dir="ltr")
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title Portfolio Site
     link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Rock+Salt&family=Sono:wght@300;400;600;700;800&display=swap' rel='stylesheet')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Calligraffitti&family=Roboto:wght@300;400;500;700;900&display=swap' rel='stylesheet')
+
     link(rel='stylesheet', href='/static/css/normalize.css')
     link(rel='stylesheet', href='/static/css/styles.css')
     script(type='text/javascript' src='/static/js/script.js' defer)
@@ -15,17 +22,18 @@ html(lang="en" dir="ltr")
       .sidebar-info-box
         br
         .thumbnail-box
-          img.thumbnail(src='https://placehold.it/550x350', alt='')
+          img.thumbnail(src='../static/img/profile/profilePic2.png', alt='Profile Photo')
         .dev-intro-box
 
           //- Replace with your name
-          h5 Manuel Garcia-Nieto
+          h5 Manuel 
+          h5 Garcia-Nieto
 
           //- Replace with description of who you are, what you do, and why you are so awesome
           p Hello and Welcome to my tech profile website! My name is Manuel, and I am a Full Stack Web Developer. I have a passion for all things tech and enjoy staying up-to-date with the latest trends and advancements in the field. 
 
           //- Add path from your '/about' route handler to the href below
-          a(href='') Learn More &rarr;
+          a(href='/about') Learn More &rarr;
 
     .wrapper
       .header
@@ -36,5 +44,3 @@ html(lang="en" dir="ltr")
           span Manuel Garcia-Nieto
 
       block content
-
-  // script(src='/static/js/script.js')

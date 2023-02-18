@@ -1,0 +1,12 @@
+extends layout.pug 
+
+block content 
+
+  nav.nav
+    a(href='/') 
+      span &larr;
+        |  Back
+        h1= err.status 
+        h2= err.message 
+    body
+        img.error(src='/static/img/error/pageNotFound_404_error.png', alt='Page not found 404') 

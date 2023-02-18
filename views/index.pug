@@ -5,23 +5,16 @@ block content
   article.portfolio-intro
 
     //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
-    h1 My Portfolio 
+    h1 Welcome to my Tech Profile
 
     //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
-    p In this portfolio, you'll find a selection of my best work. Each project showcases my ability to design, develop, and implement web applications that meet the needs of users and businesses alike. Whether it's creating responsive user interfaces, building robust server-side functionality, or optimizing performance, I take pride in delivering high-quality work that exceeds expectations. Thank you for taking the time to explore my portfolio, and please feel free to contact me if you have any questions or would like to work together on your next project.
+    p In this portfolio, you'll find a selection of my best work. Each project showcases my ability to design, develop and implement web applications that meet the needs of users and businesses alike. Whether it's creating responsive user interfaces, building robust server-side functionality, or optimizing performance, I take pride in delivering high-quality work that exceeds expectations. Thank you for taking the time to explore my portfolio, and please feel free to contact me if you have any questions or would like to work together on your next project.
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
 
-      //- Use the Pug `each` iterator to loop over the projects in your data file  
-      
-        //- Use the example Pug code below and interpolated template literals as needed to dynamically generate:
-          //- The paths in the link's href and img's src attributes
-          //- The text 'Thumbnail' interpolated with the project title for the img's alt attribute
-          //- The project title for the h5 element's text
-
-        .cell
-          a(href='#')
-            img.thumbnail(src='https://placehold.it/550x550', alt='')
-            h5 My Site
-
+      each project in projects 
+        .cell 
+          a(href= `./projects/${project.id}`)
+            img.thumbnail(src= project.image_urls[1], alt= project.project_name)
+            h5= project.project_name
