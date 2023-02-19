@@ -338,7 +338,7 @@ nav a span {
   }
 
   .portfolio-intro h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .box {
@@ -408,7 +408,7 @@ nav a span {
   text-align: center;
 }
 
-.cell img:hover {
+.cell img:hover, a:hover {
   box-shadow: 5px 10px 10px #888888;
   opacity: 0.7;
 }

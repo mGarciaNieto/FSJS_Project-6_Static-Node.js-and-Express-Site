@@ -12,8 +12,9 @@
       "live_link": "https://mgarcianieto.github.io/FSJS_Project-1_A-Random-Quote-Generator/",
       "github_link": "https://github.com/mGarciaNieto/FSJS_Project-1_A-Random-Quote-Generator",
       "image_urls": [
-        "/static/img/projects/project1_main.png",
-        "/static/img/projects/project1_land.png"
+        "/static/img/projects/project1_main.jpg",
+        "/static/img/projects/project1_land1.png",
+        "/static/img/projects/project1_land2.png"
       ]
     },
     {
@@ -29,7 +30,8 @@
       "github_link": "https://github.com/mGarciaNieto/FSJS_Project-2_Data-Pagination-and-Filtering",
       "image_urls": [
         "/static/img/projects/project2_main.png",
-        "/static/img/projects/project2_land.png"
+        "/static/img/projects/project2_land1.png",
+        "/static/img/projects/project2_land2.png"
       ]
     },
     {
@@ -46,7 +48,8 @@
       "github_link": "https://github.com/mGarciaNieto/FSJS_Project-3_Interactive-Form",
       "image_urls": [
         "/static/img/projects/project3_main.png",
-        "/static/img/projects/project3_land.png"
+        "/static/img/projects/project3_land1.png",
+        "/static/img/projects/project3_land2.png"
       ]
     },
     {
@@ -63,7 +66,8 @@
       "github_link": "https://github.com/mGarciaNieto/FSJS_Project-4_OOP-Game-Show-App",
       "image_urls": [
         "/static/img/projects/project4_main.png",
-        "/static/img/projects/project4_land.png"
+        "/static/img/projects/project4_land1.png",
+        "/static/img/projects/project4_land2.png"
       ]
     },
     {
@@ -80,7 +84,8 @@
       "github_link": "https://github.com/mGarciaNieto/FSJS_Project-5_Public-API-Requests",
       "image_urls": [
         "/static/img/projects/project5_main.png",
-        "/static/img/projects/project5_land.png"
+        "/static/img/projects/project5_land1.png",
+        "/static/img/projects/project5_land2.png"
       ]
     },
     {
@@ -97,7 +102,8 @@
       "github_link": "https://github.com/mGarciaNieto/FEWD_Project-7_WebApp-Dashboard",
       "image_urls": [
         "/static/img/projects/project6_main.png",
-        "/static/img/projects/project6_land.png"
+        "/static/img/projects/project6_land1.png",
+        "/static/img/projects/project6_land2.png"
       ]
     }
   ]
