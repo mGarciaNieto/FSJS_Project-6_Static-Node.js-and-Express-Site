@@ -51,7 +51,7 @@ app.get('/about', (req, res) => {
  * @param  {response} res - response
  */
 app.get('/projects/:id', (req, res, next) => {
-  console.log('/projects/' + projects[req.params.id].id + ' called!')
+  console.log('/projects/' + req.params.id + ' called!')
   if (projects[req.params.id]) {
     res.render('project', { projects: projects[req.params.id] })
   } else {
