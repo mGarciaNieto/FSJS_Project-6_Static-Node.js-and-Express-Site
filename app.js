@@ -35,68 +35,72 @@ app.get('/', (req, res) => {
 
 /**
  * Get /about method
- * @param  {} '/about' - about directory
- * @param  {} req - request
- * @param  {} res - response
+ * @param  {string} '/about' - about directory
+ * @param  {request} req - request
+ * @param  {response} res - response
  */
 app.get('/about', (req, res) => {
-  console.log('about called!')
+  console.log('/about called!')
   res.render('about')
 })
 
 /**
  * Get /projects/:id method
  * @param  {id'} '/projects/ - projects directory id
- * @param  {} req - request
- * @param  {} res - response
+ * @param  {request} req - request
+ * @param  {response} res - response
  */
-app.get('/projects/:id', (req, res) => {
-  console.log('Id called!')
+app.get('/projects/:id', (req, res, next) => {
+  console.log('/projects/' + projects[req.params.id].id + ' called!')
   if (projects[req.params.id]) {
     res.render('project', { projects: projects[req.params.id] })
   } else {
     const err = new Error()
-    console.error(err.stack)
     err.status = 404
     err.message = 'Project not found!...'
-    throw err
+    next(err)
   }
 })
 
 /**
  * Custom error handler
- * @param  {} req - request
- * @param  {} res - response
- * @param  {} next - next
+ * @param  {request} req - request
+ * @param  {response} res - response
+ * @param  {next} next - next
  */
 app.use((req, res, next) => {
-  console.log('404 error handler called!')
-  res.status(404).render('page-not-found')
+  const err = new Error()
+  err.status = 404
+  err.message = 'Page not found!'
+  next(err)
 })
 
 /**
  * Custom error handler
- * @param  {} err - error
- * @param  {} req - request
- * @param  {} res - response
- * @param  {} next - next
+ * @param  {error} err - error
+ * @param  {request} req - request
+ * @param  {response} res - response
+ * @param  {next} next - next
  */
 app.use((err, req, res, next) => {
-  console.error(err.stack)
   if (err.status === 404) {
-    res.status(404).render('page-not-found', { err })
+    console.log(err.status + ' Page not found!...')
+    res.status(err.status)
+    res.render('page-not-found', { err })
   } else {
-    err.message = `Oops! It looks like something went wrong on the server.`
+    err.status = 500
+    console.log(err.status + ' Internal server error!...')
+    err.message = 'Oops! It looks like something went wrong on the server.'
     res.status(err.status || 500).render('error', { err })
   }
 })
 
 const PORT = 3000
 /**
- * Localhost listens at port 3000
+ * Localhost listens on port 3000
  * console.log info of home and port address
- * @param  {} PORT - port number
- * @param  {} () - anonymous arrow function
+ * @param  {integer} PORT - port number
+ * @param  {function} () - anonymous arrow function
  */
 app.listen(PORT, () => {
   console.log(`The server is running on 127.0.0.1:${PORT}`)
