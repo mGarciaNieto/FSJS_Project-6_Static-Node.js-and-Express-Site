@@ -57,7 +57,7 @@ app.get('/projects/:id', (req, res, next) => {
   } else {
     const err = new Error()
     err.status = 404
-    err.message = 'Project not found!...'
+    err.message = ' Project not found!...'
     next(err)
   }
 })
