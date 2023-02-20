@@ -1,6 +1,6 @@
 // Use of Babel compiler implemented here.
 import express from 'express'
-import data from './data.json' assert { type: 'json' }
+import data from './data.json'
 
 const app = express()
 
