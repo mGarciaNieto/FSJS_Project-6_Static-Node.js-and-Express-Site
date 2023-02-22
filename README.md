@@ -12,4 +12,4 @@ The sixth of ten projects for the Full Stack JavaScript Techdegree program at Tr
 - Custom logo has been created
 - CSS styles.css file has been modified to customize styles
 
-> Ready for marking...
+> Grade: Exceeds Expectations
