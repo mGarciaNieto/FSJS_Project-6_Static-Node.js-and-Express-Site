@@ -90,7 +90,7 @@
     },
     {
       "id": 5,
-      "project_name": "WeppApp Dashboard",
+      "project_name": "WebApp Dashboard",
       "description": "In this project, I've created an interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript programming. This project involves creating tables, charts, graphics and other user interface components in a manner that promotes interactivity and usability.",
       "technologies": [
         "HTML5",
